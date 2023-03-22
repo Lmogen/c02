@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>榜单</title>
+    <style>
+         /* 一级导航栏 */
+         div.menu1{
+            height: 80px;
+            width: 100%;
+            margin-top:0px;
+            background-color:#242424;
+            display:inline-block;
+        }
+        .p1{
+            float:left; 
+            margin-top: 5px;
+            margin-left: 100px;
+            height: 60px;
+            width: 250px;
+            background: url(homework-image/logo.png) no-repeat;
+            
+        }
+        .p2{
+            /*float:left;*/
+            position: absolute;
+            margin-top:0px;
+            /*left: 300px;*/
+            height: 80px;
+            width: 100px;
+            text-align:center;
+            line-height: 80px;
+            color:aliceblue;
+            display: inline;
+        }
+        .p2:hover{
+            background-color:black;
+        }
+        /* 二级导航栏 */
+        div.menu2{
+            height: 40px;
+            width: 100%;
+            margin-top:-4px;
+            background-color:#c20c0c;
+            display:inline-block;
+        }
+        .p3{
+            position: absolute;
+            margin-top:5px;
+            height: 30px;
+            width: 50px;
+            border-radius:25%;
+            font-size: small;
+            text-align:center;
+            line-height: 30px;
+            color:aliceblue;
+            display: inline;
+        }
+        .p3:hover{
+            background-color: #9b0909;
+        }
+        div.content{
+            margin-left:12.5%;
+            height: 2000px;
+            width: 75%; 
+            background-color:snow;
+            background-image: url(homework-image/背景.jpg);
+            display:inline-block;
+            margin-top: 2px;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        /* 三级导航栏 */
+        div.menu3{
+            height: 35px;
+            width: 100%;
+            margin-top:-6px;
+            background-color:darkgray;
+            display:inline-block;
+        }
+        .p4{
+            position: absolute;
+            margin-top:4px;
+            height: 27px;
+            width: 70px;
+            border-radius:25%;
+            font-size: small;
+            text-align:center;
+            line-height: 30px;
+            color:aliceblue;
+            display: inline;
+        }
+        .p4:hover{
+            background-color: gray;
+        }
+        .box1{
+            margin-left: 230px;
+            margin-top: 60px;
+        }
+        .box2{
+            width: 600px;
+            height: 100px;
+            background-color:white;
+            margin-left: 21%;
+            margin-top: 70px;
+            border-radius: 20px;
+            border: 3px solid gray;
+        }
+        div.box3{
+            width: 180px;
+            height: 180px;
+            margin-top: -200px;
+            margin-right: 29%;
+            float: right;
+            border-radius: 70%;
+            /* 大于50%都是圆 */
+            background-color: #242424;
+        }
+        div.box4{
+            width: 200px;
+            height: 200px;
+            margin-top: -210px;
+            margin-right: 23%;
+            float: right;
+            border-radius: 10%;
+            background-image: url(homework-image/满目星河.jpg);
+            background-repeat: repeat-y;
+            background-position: center top;
+            background-attachment: scroll;
+            border: 2px solid black;
+        }
+
+        div.box5{
+            margin-top: 80px;
+            margin-left: 23%;
+        }
+        div img{
+            width: 76px;
+            height: 76px;
+            margin-top: -89px;
+            margin-right: 28%;
+            float: right;
+        }
+        div.image2{
+            width: 80px;
+            height: 78px;
+            background-image:url(homework-image/CMJ.png);
+            margin-top: -89px;
+            margin-left: 23%;
+            float: left;
+            border-radius: 10px;
+        }
+        div.box6{
+            margin-left: 350px;
+            margin-top: -107px;
+        }
+        .p5{
+            font-size: 18px;
+            /*float:left;*/
+            /*left: 300px;*/
+            height: 20px;
+            width: 100px;
+            border-radius: 10px;
+            text-align:center;
+            line-height: 20px;
+            background-color: antiquewhite;
+        }
+        .p6{
+            font-size: 25px;
+            margin-top: -15px;
+            margin-left: 10px;
+            
+        }
+        .p7{
+            font-size: 20px;
+            margin-top: -25px;
+            color: gray;
+            margin-left: 12px;
+        }
+        div.image3{
+            width: 80px;
+            height: 78px;
+            background-image:url(homework-image/1AM.jpg);
+            margin-top: -89px;
+            margin-left: 23%;
+            float: left;
+            border-radius: 10px;
+        }
+        div.image4{
+            width: 80px;
+            height: 78px;
+            background-image:url(homework-image/银河少年.jpg);
+            margin-top: -89px;
+            margin-left: 23%;
+            float: left;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一级导航栏内容 -->
+    <div class="menu1">
+        <p class="p1"></p>
+        <p style="margin-left:10px; background-color :black;" class="p2">发现音乐</p>
+        <p style="margin-left:110px;" class="p2">我的音乐</p>
+        <p style="margin-left:210px;" class="p2">关注</p>
+        <p style="margin-left:310px;" class="p2">商城</p>
+        <p style="margin-left:410px;" class="p2">音乐人</p>
+        <p style="margin-left:510px;" class="p2">下载客户端</p>
+        <p style="margin-left:950px;" class="p2">头像</p>
+    </div>
+    <!-- 二级导航栏内容 -->
+    <div class="menu2">
+        <a href="首页.html"><p style="margin-left:385px;" class="p3">推荐</p></a>
+        <p style="margin-left:465px; background-color: #9b0909" class="p3">排行榜</p>
+        <a href="歌单.html"><p style="margin-left:545px;" class="p3">歌单</p></a>
+    </div>
+    <!-- 主要内容容器 -->
+    <div class="content">
+        <!-- 三级导航栏内容 -->
+        <div class="menu3">
+            <p style="margin-left:200px; background-color: gray" class="p4">华语</p>
+            <p style="margin-left:320px;" class="p4">欧美</p>
+            <p style="margin-left:440px;" class="p4">日语</p>
+            <p style="margin-left:560px;" class="p4">韩语</p>
+            <p style="margin-left:680px;" class="p4">音乐人</p>
+            <p style="margin-left:800px;" class="p4">一周热搜</p>
+        </div>
+        <div class="box1">
+            <h1>华语<br>
+                一周上新→
+            </h1><br>
+            <h3>
+                我与春风皆过客，<br>
+                你携秋水揽星河。
+            </h3>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box2" title="点击进入">
+            
+        </div>
+        <a href="播放.html"><div><img src="homework-image/播放.png" alt=""title="点击进入"></div></a>
+        <div class="image2"></div>
+        <div class="box6" title="点击进入">
+            <p class="p5">编辑推荐</p>
+            <p class="p6"><b>满目星河</b></p>
+            <p class="p7"><b>CMJ</b></p>
+        </div>
+        <div class="box5">
+            <h2>热评精选</h2>
+            <h3><br>
+                @用户xxx：<br><br>
+                希望正在读这句话的人永远幸福。<br><br><br>
+                @用户xxx：<br><br>
+                第七十三个一百多天 也像刚热恋！
+            </h3>
+        </div>
+        <div class="box2">
+            
+        </div>
+        <div><img src="homework-image/播放.png" alt=""></div>
+        <div class="image3"></div>
+        <div class="box6">
+            <p class="p5">编辑推荐</p>
+            <p class="p6"><b>1 AM</b></p>
+            <p class="p7"><b>thomeboydontkill</b></p>
+        </div>
+        <div class="box5">
+            <h2>热评精选</h2>
+            <h3><br>
+                @用户xxx：<br><br>
+                这张专辑我预热了半年。<br><br><br>
+                @用户xxx：<br><br>
+                好消息：终于发了 坏消息：听腻了。
+            </h3>
+        </div>
+        <div class="box2">
+            
+        </div>
+        <div><img src="homework-image/播放.png" alt=""></div>
+        <div class="image4"></div>
+        <div class="box6">
+            <p class="p5">编辑推荐</p>
+            <p class="p6"><b>银河少年</b></p>
+            <p class="p7"><b>王啸坤/薛之谦</b></p>
+        </div>
+        <div class="box5">
+            <h2>热评精选</h2>
+            <h3><br>
+                @用户xxx：<br><br>
+                其实熬夜等薛之谦的歌真的很浪漫啊。<br><br><br>
+                @用户xxx：<br><br>
+                一个是最初的少年，一个是坚持初心的少年。
+            </h3>
+        </div>
+    </div>
+    
+</body>
+</html>

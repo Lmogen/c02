@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>歌曲列表</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+        }
+         /* 一级导航栏 */
+         div.menu1{
+            height: 80px;
+            width: 100%;
+            margin-top:0px;
+            background-color:#242424;
+            display:inline-block;
+        }
+        .p1{
+            float:left; 
+            margin-top: 5px;
+            margin-left: 100px;
+            height: 60px;
+            width: 250px;
+            background: url(homework-image/logo.png) no-repeat;
+            
+        }
+        .p2{
+            /*float:left;*/
+            position: absolute;
+            margin-top:0px;
+            /*left: 300px;*/
+            height: 80px;
+            width: 100px;
+            text-align:center;
+            line-height: 80px;
+            color:aliceblue;
+            display: inline;
+        }
+        .p2:hover{
+            background-color:black;
+        }
+        /* 二级导航栏 */
+        div.menu2{
+            height: 40px;
+            width: 100%;
+            margin-top:-4px;
+            background-color:#c20c0c;
+            display:inline-block;
+        }
+        .p3{
+            position: absolute;
+            margin-top:5px;
+            height: 30px;
+            width: 50px;
+            border-radius:25%;
+            font-size: small;
+            text-align:center;
+            line-height: 30px;
+            color:aliceblue;
+            display: inline;
+        }
+        .p3:hover{
+            background-color: #9b0909;
+        }
+        /* 主要内容显示区域 */
+        div.content{
+            margin-left:12.5%;
+            height:2000px; 
+            width: 75%; 
+            background-color:white;
+            display:inline-block;
+        }
+        .content1{
+            width: 400px;
+            height:350px;
+            float:left;
+            margin-left: 70px;
+        }
+        .content1 img{
+            height:250px;
+            width: 250px;
+            margin:50px 100px auto;
+        }
+        .content2{
+            width:600px;
+            height: 350px;
+            float: left;
+        }
+        .content2 img{
+            width:20px;
+            height:20px;
+        }
+        .content2 input{
+            width:80px;
+            margin-right: 3px;
+        }
+        .title{
+            border-bottom:2px solid #c20c0c ;
+            width:100%;
+            height: 60px;
+            float: left;
+        }
+        .title p{
+            text-align:center;
+            line-height: 60px;
+            width: 100px;
+            color:grey;
+            display:inline-block;
+            /* background-color: antiquewhite; */
+        }
+        /* 设置表格 */
+        div.table{
+            float:left;
+            width:100%;
+            text-align:center
+        }
+        div table{
+            border: 2px solid #e1e1e1;
+        }
+        /* 设置表格奇偶数行不同背景颜色 */
+        tr:nth-child(odd) {
+            background-color:white;
+        }
+
+        tr:nth-child(even) {
+            background-color:whitesmoke;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 一级导航栏内容 -->
+    <div class="menu1">
+        <p class="p1"></p>
+        <p style="margin-left:10px; background-color :black;" class="p2">发现音乐</p>
+        <p style="margin-left:110px;" class="p2">我的音乐</p>
+        <p style="margin-left:210px;" class="p2">关注</p>
+        <p style="margin-left:310px;" class="p2">商城</p>
+        <p style="margin-left:410px;" class="p2">音乐人</p>
+        <p style="margin-left:510px;" class="p2">下载客户端</p>
+        <p style="margin-left:950px;" class="p2">头像</p>
+    </div>
+    <!-- 二级导航栏内容 -->
+    <div class="menu2">
+        <a href="首页.html"><p style="margin-left:385px;" class="p3">推荐</p></a>
+        <a href="榜单.html"><p style="margin-left:465px;" class="p3">排行榜</p></a>
+        <a href="歌单.html"><p style="margin-left:545px;" class="p3">歌单</p></a>
+    </div>
+    <!-- 主要内容容器 -->
+    <div class="content">
+        <div class="content1">
+            <img src="homework-image/pic1.jpg" alt="">
+        </div>
+
+        <div class="content2">
+            <h2>[快乐工作指南]快乐工作,烦恼拜拜</h2>
+            <p><img src="homework-image/pic13.jpg" alt=""><span>  网易云官方</span>
+            <span style="margin:30px;color:grey;font-size: small;">2022-11-27 创建</span><p>
+            <input type="button" value="播放" style="background-color: #2d7dca; color:white">
+            <input type="button" value="转发" >
+            <input type="button" value="收藏" >
+            <input type="button" value="下载" >
+            <p>标签:<a href=""> 轻音乐</a><a href=""> 安静</a><a href=""> 放松</a></p>
+            <!-- 简介(设置溢出显示样式) -->
+            <div>
+                <div id="introduce" style="width: 600px;overflow: hidden;display: -webkit-box;-webkit-box-ordinal:vertical;-webkit-line-clamp: 3;">
+                    介绍： 世上的音乐，大部分人听到的都是带有歌词的，其实，没有歌词的音乐对情感的表达更为淋漓尽致，人们听惯了热歌榜，或许就认为好听的音乐也就是如此了。
+                    其实，音乐的世界很广，最震撼人心的音乐，可能在你从未触及过的深处。专注呼吸 关注内心
+                    纯净的自然环境音乐
+                    伴你开始纯粹的静心时间
+
+                </div>
+                    <span id="openBtn" style="color: dodgerblue">展开</span>
+            </div>
+        </div>
+
+        <div class="title">
+            <span style="margin-left :20%;font-size: 25px;font-weight:20px;display: inline-block;">歌曲列表</span>
+            <p>10 首歌</p>
+            <p>播放 265 次</p>
+        </div>
+        
+        <div class="table">
+            <table align="center" cellspacing="0" width="80%" >
+                <tr>
+                   <th colspan="2"></th>
+                   <th>歌曲标题</th>
+                   <th>时长</th>
+                   <th>歌手</th>
+                   <th>专辑</th> 
+                </tr>
+
+                <tr title="满目星河-CMJ">
+                    <td>1</td>
+                    <td><a href="播放.html" ><img src="homework-image/播放.png" alt="" title="点击播放" style="width: 22px;height:22px;vertical-align:middle;"></a></td>
+                    <td>满目星河</td>
+                    <td>2:58</td>
+                    <td>CMJ</td>
+                    <td>收录于《满目星河》</td>
+                </tr>
+                <tr title="遇见（钢琴版）-纯音乐">
+                    <td>2</td>
+                    <td><a href="#"><img src="homework-image/播放.png" alt="" title="点击播放" style="width: 22px;height:22px;vertical-align:middle;"></a></td>
+                    <td>遇见（钢琴版）</td>
+                    <td>3:24</td>
+                    <td>纯音乐</td>
+                    <td>101 Drama Moods</td>
+                </tr>
+                <tr title="烟火-李伟菘">
+                    <td>3</td>
+                    <td><a href="#"><img src="homework-image/播放.png" alt="" title="点击播放" style="width: 22px;height:22px;vertical-align:middle;"></a></td>
+                    <td>烟火</td>
+                    <td>3:49</td>
+                    <td>李伟菘</td>
+                    <td>流转 李伟菘钢琴演奏精选</td>
+                </tr>
+                <tr title="梦中的婚礼-理查德·克莱德曼">
+                    <td>4</td>
+                    <td><a href="#"><img src="homework-image/播放.png" alt="" title="点击播放" style="width: 22px;height:22px;vertical-align:middle;"></a></td>
+                    <td>梦中的婚礼</td>
+                    <td>2:42</td>
+                    <td>Richard Clayderman</td>
+                    <td>理查德·克莱德曼钢琴曲全集</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+<script>
+    // 进行文本溢出部分显示为...并设置展开/收起按钮
+    // 多行文本溢出显示
+    // 1:设置文本缩略显示最大行数  2:将溢出部分隐藏  3:溢出部分设置显示为...
+    //定义函数 TT 根据元素id获得页面元素
+    function TT(id){
+        return document.getElementById(id);
+    }
+    // 立即执行函数，判断文本长度是否过长
+    (function(){
+        var conText = TT('introduce').innerText
+        // 若文本长度大于10个字符,则使用样式省略显示
+        if(conText.length >= 10){
+            TT('introduce').style.cssText = "width: 600px;display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3;overflow: hidden;text-overflow: ellipsis;"
+        }
+    })()
+    //点击事件，控制文本显示、收起
+    TT('openBtn').onclick=function(){
+        let text = TT('openBtn').innerText;//链接按钮
+        // 如果按钮值为展开则将样式设置为空白并将按钮改为收起
+        if(text == '展开'){
+            TT('introduce').style.cssText = "width:600px;";
+            TT('openBtn').innerHTML = '收起'
+        }
+        // 如果按钮值为收起则将样式设置为省略显示并将按钮改为收起
+        if(text == '收起'){
+            TT('introduce').style.cssText = "width: 600px;display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp: 3;overflow: hidden;text-overflow: ellipsis;";
+            TT('openBtn').innerHTML = '展开'
+        }
+    }
+</script>
+</html>
